@@ -48,10 +48,10 @@ export default function Header() {
                 </div>
               </div>
               <div className="flex items-center gap-2 text-2xl pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <Link to="/profile">
+                <Link to="/cart">
                   <PiShoppingCartSimpleBold />
                 </Link>
-                <Link to="/cart">
+                <Link to="/profile">
                   <CgProfile />
                 </Link>
               </div>
