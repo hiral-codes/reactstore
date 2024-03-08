@@ -15,7 +15,7 @@ const Header = () => {
     setIsOpen((prev) => !prev);
   }
   return (
-    <header className="w-full bg-[#0000005a] flex items-center justify-between py-4 pr-3 relative bg-center bg-cover md:px-4 bg-[black] ">
+    <header className="w-full bg-[#00000046] backdrop-blur-md flex items-center justify-between py-4 pr-3 relative bg-center bg-cover md:px-4 bg-[black] ">
       <div className="bar text-2xl md:hidden">
         <button
           onClick={handleNav}
@@ -41,14 +41,36 @@ const Header = () => {
       <div className="nav hidden md:block">
         <div className="nav">
           <ul className="flex items-center gap-2">
-            <li className="py-1 px-4 bg-[#151515] rounded-md hover:bg-black">
+            <li className="text-base font-bold p-1">
               <Link to="/">Home</Link>
             </li>
-            <li className="py-1 px-4 bg-[#151515] rounded-md hover:bg-black">
+            <li className="text-base font-bold p-1">
               <Link to="/products">Products</Link>
             </li>
-            <li className="py-1 px-4 bg-[#151515] rounded-md hover:bg-black">
+            <li className="text-base font-bold p-1">
               <Link to="/about">About</Link>
+            </li>
+            <li className="flex">
+            <div className="auth px-1 py-1">
+                <Link
+                  to="auth/login"
+                  onClick={handleNav}
+                  className="flex font-bold gap-1 items-center"
+                >
+                  <FiLogIn />
+                  Login
+                </Link>
+              </div>
+              <div className="auth font-bold px-1 py-1 ml-2">
+                <Link
+                  to="auth/login"
+                  onClick={handleNav}
+                  className="flex font-bold gap-1 items-center"
+                >
+                  <SiGnuprivacyguard />
+                  Signup
+                </Link>
+              </div>
             </li>
           </ul>
         </div>
@@ -98,17 +120,17 @@ const Header = () => {
                 <Link
                   to="auth/login"
                   onClick={handleNav}
-                  className="flex gap-1 items-center"
+                  className="flex font-bold gap-1 items-center"
                 >
                   <FiLogIn />
                   Login
                 </Link>
               </div>
-              <div className="auth px-1 py-1 bg-[#151515] rounded-lg ml-2">
+              <div className="auth font-bold px-1 py-1 bg-[#151515] rounded-lg ml-2">
                 <Link
                   to="auth/login"
                   onClick={handleNav}
-                  className="flex gap-1 items-center"
+                  className="flex font-bold gap-1 items-center"
                 >
                   <SiGnuprivacyguard />
                   Signup
@@ -128,13 +150,18 @@ const Header = () => {
           </div>
           <div className="mainHead flex-1 flex items-center justify-center">
             <div className="menu">
-              <ul className="text-center">
-                <li>
+              <ul className="text-center text-2xl font-bold">
+                <li className="py-1">
+                  <Link onClick={handleNav} to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="py-1">
                   <Link onClick={handleNav} to="/about">
                     About
                   </Link>
                 </li>
-                <li>
+                <li className="py-1">
                   <Link onClick={handleNav} to="/products">
                     Products
                   </Link>

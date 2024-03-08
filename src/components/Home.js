@@ -1,9 +1,10 @@
 import React from 'react'
+import HomeSlide from './HomeSlide'
 
 function Home() {
   return (
     <>
-    <div className='text-center'>Home</div>
+    <HomeSlide/>
     </>
   )
 }
