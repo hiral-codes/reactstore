@@ -42,7 +42,7 @@ function HomeSlide() {
     pauseOnHover: true,
   };
   return (
-    <div className="slider-container w-[80%] mx-auto py-8 md:w-[95%] z-0">
+    <div className="slider-container w-[80%] mx-auto md:w-[95%] z-0">
       <Slider {...settings} className="z-[-1]">
         <div>
           <div className="h-48 md:h-80">
