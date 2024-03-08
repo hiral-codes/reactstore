@@ -24,7 +24,7 @@ const Header = () => {
           <FiMenu />
         </button>
       </div>
-      <div className="logo h-6 md:h-10">
+      <Link to="/" className="logo h-6 md:h-10">
         <svg
           width="auto"
           height="auto"
@@ -37,7 +37,7 @@ const Header = () => {
             fill="white"
           />
         </svg>
-      </div>
+      </Link>
       <div className="nav hidden md:block">
         <div className="nav">
           <ul className="flex items-center gap-2">
