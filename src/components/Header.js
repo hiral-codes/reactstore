@@ -7,7 +7,7 @@ import { SiGnuprivacyguard } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
-import { FaShoppingCart } from "react-icons/fa";
+import { PiShoppingCartSimpleBold } from "react-icons/pi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +83,7 @@ const Header = () => {
         </div>
         <div className="px-1 py-1 bg-[#151515] rounded-full ml-2 text-2xl">
           <Link to="/cart">
-            <FaShoppingCart />
+            <PiShoppingCartSimpleBold />
           </Link>
         </div>
         <div className="auth px-1 py-1 bg-[#151515] rounded-full ml-2 text-2xl hidden md:block">
