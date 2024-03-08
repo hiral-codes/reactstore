@@ -8,8 +8,8 @@ import { FaShippingFast } from "react-icons/fa";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { useEffect } from "react";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Home() {
   useEffect(() => {
     AOS.init();
@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
       <div>
-        <HomeSlide/>
+        <HomeSlide />
       </div>
       <div className="home-title text-center text-xl md:text-4xl py-4 px-4 font-semibold">
         "Shop Your Vibe, Feel the Cart, Discover Your Perfect Groove with
@@ -48,7 +48,10 @@ function Home() {
           Dolorum veritatis corporis non magnam sequi?
         </p>
         <div className="container p-6 mx-auto flex gap-3 md:gap-8 flex-wrap justify-center">
-          <div data-aos="zoom-in" className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3">
+          <div
+            data-aos="zoom-in"
+            className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3"
+          >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
                 <GoCheckCircleFill className="text-2xl" />
@@ -61,7 +64,10 @@ function Home() {
               confidence, knowing that you're getting the best of the best.
             </p>
           </div>
-          <div data-aos="zoom-in" className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3">
+          <div
+            data-aos="zoom-in"
+            className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3"
+          >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
                 <RiMoneyDollarCircleFill className="text-2xl" />
@@ -75,7 +81,10 @@ function Home() {
               your money.
             </p>
           </div>
-          <div data-aos="zoom-in" className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3">
+          <div
+            data-aos="zoom-in"
+            className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3"
+          >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
                 <FaBagShopping className="text-2xl" />
@@ -89,7 +98,10 @@ function Home() {
               selection, place orders, and track your shipments.
             </p>
           </div>
-          <div data-aos="zoom-in" className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3">
+          <div
+            data-aos="zoom-in"
+            className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3"
+          >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
                 <FaShippingFast className="text-2xl" />
@@ -102,7 +114,10 @@ function Home() {
               expedited delivery service, you'll have your order in no time.
             </p>
           </div>
-          <div data-aos="flip-left" className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3">
+          <div
+            data-aos="flip-left"
+            className="card w-full border-2 md:border-4 border-gray-400 bg-[#151515] rounded p-4 md:w-1/3"
+          >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
                 <RiCustomerService2Fill className="text-2xl" />
@@ -111,13 +126,22 @@ function Home() {
             </div>
             <p className="pt-2">
               Have a question or need assistance? Our dedicated customer service
-              team is here to help. Whether you need help finding the up
-              product or have a concern about your order, we're committed to
-              providing you with the best shopping experience possible.
+              team is here to help. Whether you need help finding the up product
+              or have a concern about your order, we're committed to providing
+              you with the best shopping experience possible.
             </p>
           </div>
         </div>
       </div>
+      <div className="flex item-center- justify-center py-4">
+        <div className="w-[2px] h-8 bg-[#ffffff89] md:h-10"></div>
+      </div>
+      <p className="text-center text-lg py-2">
+        Trusted by over 20,000 customers all over the world
+      </p>
+      <p className="text-center text-sm opacity-60 px-8 mx-auto pb-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur modi sit quod.
+      </p>
     </>
   );
 }

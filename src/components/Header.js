@@ -24,7 +24,7 @@ const Header = () => {
           <FiMenu />
         </button>
       </div>
-      <Link to="/" className="logo h-6 md:h-10">
+      <Link to="/" className="logo h-6 md:h-8">
         <svg
           width="220"
           height="auto"
