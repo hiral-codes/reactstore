@@ -7,7 +7,7 @@ function Home() {
       <div>
         <HomeSlide />
       </div>
-      <div className="home-title text-center text-4xl py-4 px-4 font-bold">
+      <div className="home-title text-center text-xl md:text-4xl py-4 px-4 font-semibold">
         "Shop Your Vibe, Feel the Cart, Discover Your Perfect Groove with
         Vibestore"
       </div>
@@ -27,7 +27,7 @@ function Home() {
         <div className="w-[2px] h-10 bg-[#ffffff89] md:h-20"></div>
       </div>
       <div className="Explore">
-        <div className="title text-center font-extrabold text-4xl">
+        <div className="title text-center font-bold text-2xl md:text-4xl">
           Why shop with us?
         </div>
         <p className="text-center py-2 px-10 mx-auto">
@@ -37,7 +37,7 @@ function Home() {
         </p>
         <div className="container p-12 mx-auto flex gap-3 md:gap-8 flex-wrap justify-center">
 
-          <div className="card w-full border-4 border-purple-600 bg-[#151515] rounded p-4 md:w-1/3">
+          <div className="card w-full border-2 md:border-4 border-purple-500 bg-[#151515] rounded p-4 md:w-1/3">
             <div className="title font-bold text-xl">Quality Assurance</div>
             <p>
               We source our products from trusted suppliers, ensuring that each
@@ -45,7 +45,7 @@ function Home() {
               confidence, knowing that you're getting the best of the best.
             </p>
           </div>
-          <div className="card w-full border-4 border-purple-600 bg-[#151515] rounded p-4 md:w-1/3">
+          <div className="card w-full border-2 md:border-4 border-purple-500 bg-[#151515] rounded p-4 md:w-1/3">
             <div className="title font-bold text-xl">Unbeatable Prices</div>
             <p>
               We believe that everyone deserves access to high-quality [Your
@@ -54,7 +54,7 @@ function Home() {
               your money.
             </p>
           </div>
-          <div className="card w-full border-4 border-purple-600 bg-[#151515] rounded p-4 md:w-1/3">
+          <div className="card w-full border-2 md:border-4 border-purple-500 bg-[#151515] rounded p-4 md:w-1/3">
             <div className="title font-bold text-xl">Convenient Shopping</div>
             <p>
               Skip the crowded malls and long checkout lines. With [Your
@@ -63,7 +63,7 @@ function Home() {
               selection, place orders, and track your shipments.
             </p>
           </div>
-          <div className="card w-full border-4 border-purple-600 bg-[#151515] rounded p-4 md:w-1/3">
+          <div className="card w-full border-2 md:border-4 border-purple-500 bg-[#151515] rounded p-4 md:w-1/3">
             <div className="title font-bold text-xl">Fast Shipping</div>
             <p>
               We know you're excited to receive your new [Your Product Niche],
@@ -71,7 +71,7 @@ function Home() {
               expedited delivery service, you'll have your order in no time.
             </p>
           </div>
-          <div className="card w-full border-4 border-purple-600 bg-[#151515] rounded p-4 md:w-1/3">
+          <div className="card w-full border-2 md:border-4 border-purple-500 bg-[#151515] rounded p-4 md:w-1/3">
             <div className="title font-bold text-xl">
               Exceptional Customer Service
             </div>
