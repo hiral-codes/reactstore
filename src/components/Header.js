@@ -101,7 +101,7 @@ const Header = () => {
       <div
         className={
           isOpen
-            ? "absolute left-0 right-0 bottom-0 top-0 bg-black w-screen h-screen sm:hidden"
+            ? "absolute left-0 right-0 bottom-0 top-0 bg-black z-50 w-screen h-screen sm:hidden"
             : "hidden"
         }
       >
