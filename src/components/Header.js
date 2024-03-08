@@ -26,7 +26,7 @@ const Header = () => {
       </div>
       <Link to="/" className="logo h-6 md:h-10">
         <svg
-          width="auto"
+          width="220"
           height="auto"
           viewBox="0 0 531 96"
           fill="none"
@@ -53,7 +53,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="submenu flex">
+      <div className="submenu flex justify-end md:w-[220px]">
         <div className="px-1 py-1 bg-[#151515] rounded-full ml-2 text-2xl">
           <Link to="/profile">
             <CgProfile />
