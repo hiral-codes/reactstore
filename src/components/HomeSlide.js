@@ -40,32 +40,32 @@ function HomeSlide() {
     <div className="slider-container w-[80%] mx-auto py-8 md:w-[95%]">
       <Slider {...settings}>
         <div>
-          <div className="h-60 md:h-80">
+          <div className="h-48 md:h-80">
             <img src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
           </div>
         </div>
         <div>
-          <div className="h-60 md:h-80">
+          <div className="h-48 md:h-80">
             <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
           </div>
         </div>
         <div>
-          <div className="h-60 md:h-80">
+          <div className="h-48 md:h-80">
             <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
           </div>
         </div>
         <div>
-          <div className="h-60 md:h-80">
+          <div className="h-48 md:h-80">
             <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
           </div>
         </div>
         <div>
-          <div className="h-60 md:h-80">
+          <div className="h-48 md:h-80">
             <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
           </div>
         </div>
         <div>
-          <div className="h-60 md:h-80">
+          <div className="h-48 md:h-80">
             <img src="https://images.unsplash.com/photo-1524289286702-f07229da36f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
           </div>
         </div>
