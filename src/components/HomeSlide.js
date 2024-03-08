@@ -2,11 +2,35 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState,useEffect } from "react";
 function HomeSlide() {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Adjust the number of slides to show based on window width
+      if (window.innerWidth < 768) {
+        setSlidesToShow(1); // Show one slide on smaller screens
+      } else if (window.innerWidth < 1024) {
+        setSlidesToShow(2); // Show two slides on medium screens
+      } else {
+        setSlidesToShow(3); // Show three slides on larger screens
+      }
+    };
+
+    // Initial adjustment when component mounts
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   var settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
