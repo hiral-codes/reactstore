@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from "./components/Footer";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -22,7 +23,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} />
-        </Routes>     
+        </Routes>
+        <Footer/>     
     </Router>
   );
 }

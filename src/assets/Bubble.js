@@ -4,8 +4,8 @@ function Bubble(props) {
   return (
     <svg
       fill="#5714FF"
-      height="113px"
-      width="113px"
+      height="200px"
+      width="200px"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 363.19 363.19"

@@ -51,7 +51,7 @@ function Home() {
         <div className="container p-6 mx-auto flex gap-3 md:gap-8 flex-wrap justify-center">
           <div
             data-aos="zoom-in"
-            className="card w-full border-2 md:border-4 border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
+            className="card w-full md:border border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
           >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
@@ -67,7 +67,7 @@ function Home() {
           </div>
           <div
             data-aos="zoom-in"
-            className="card w-full border-2 md:border-4 border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
+            className="card w-full md:border border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
           >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
@@ -84,7 +84,7 @@ function Home() {
           </div>
           <div
             data-aos="zoom-in"
-            className="card w-full border-2 md:border-4 border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
+            className="card w-full md:border border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
           >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
@@ -101,7 +101,7 @@ function Home() {
           </div>
           <div
             data-aos="zoom-in"
-            className="card w-full border-2 md:border-4 border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
+            className="card w-full md:border border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
           >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
@@ -117,7 +117,7 @@ function Home() {
           </div>
           <div
             data-aos="flip-left"
-            className="card w-full border-2 md:border-4 border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
+            className="card w-full md:border border-gray-400 bg-[#1a1a1a] rounded p-4 md:w-1/3"
           >
             <div className="title font-bold text-xl flex items-center gap-2">
               <div className="w-10 h-10 flex items-center justify-center rounded-full flex-shrink-0 bg-indigo-900">
@@ -148,7 +148,7 @@ function Home() {
       <div className="review flex justify-center items-center px-8 py-8">
         <div
           data-aos="zoom-in"
-          className="w-full h-auto shadow-2xl ring-1 bg-[#1a1a1a] rounded relative md:w-1/2 px-4 pt-10 text-center"
+          className="w-full h-auto shadow-2xl bg-[#1a1a1a] rounded relative md:w-1/2 px-4 pt-10 text-center"
         >
           <div className="absolute w-24 h-24 rounded-full bg-gray-400 -top-8 left-8 overflow-hidden">
             <img
@@ -171,12 +171,12 @@ function Home() {
               d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
             />
           </svg>
-          <p className="text-xl opacity-70 pt-4">
+          <p className="md:text-xl opacity-70 pt-2">
             " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
             nobis et commodi facilis molestiae odit. "
           </p>
           <h1 className="text-xl py-2">Chris Martin</h1>
-          <p className="text-xl pb-6">
+          <p className="md:text-xl pb-6">
             CEO & CO-Founder <strong className="text-purple-500">@babel</strong>
           </p>
         </div>
