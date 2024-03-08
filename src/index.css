@@ -7,8 +7,8 @@
   }
 
 body{
-    background-color: black;
     color: white;
     font-family: 'Gilroy-Regular';
-    padding-top: 80px;
+    padding-top: 64px;
+    background: #000;
 }
