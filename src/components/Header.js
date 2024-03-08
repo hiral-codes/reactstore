@@ -15,7 +15,7 @@ const Header = () => {
     setIsOpen((prev) => !prev);
   }
   return (
-    <header className="w-full bg-[#00000046] backdrop-blur-md flex items-center justify-between py-4 pr-3 relative bg-center bg-cover md:px-4 bg-[black] ">
+    <header className="w-full bg-[#00000092] backdrop-blur-md flex items-center justify-between py-4 pr-3 bg-center bg-cover md:px-4 bg-[black] fixed top-0 left-0 right-0">
       <div className="bar text-2xl md:hidden">
         <button
           onClick={handleNav}
@@ -101,12 +101,12 @@ const Header = () => {
       <div
         className={
           isOpen
-            ? "absolute left-0 right-0 bottom-0 top-0 bg-black z-50 w-screen h-screen sm:hidden"
+            ? "fixed inset-0 bg-[#000000f1] backdrop-blur-2xl z-[9999] w-screen h-screen md:hidden"
             : "hidden"
         }
       >
         <div className="w-full h-full flex flex-col">
-          <div className="mobileHeader px-3 py-2 flex items-center justify-between">
+          <div className="mobileHeader bg-black px-3 py-2 flex items-center justify-between">
             <div className="closeBar">
               <button
                 onClick={handleNav}
@@ -116,7 +116,7 @@ const Header = () => {
               </button>
             </div>
             <div className="mobileSubmenu flex items-center">
-              <div className="auth px-1 py-1 bg-[#151515] rounded-lg">
+              <div className="auth px-1 py-1 bg-[#000000f3] backdrop-blur-2xl  z-[999] rounded-lg">
                 <Link
                   to="auth/login"
                   onClick={handleNav}
