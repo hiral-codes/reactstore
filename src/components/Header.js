@@ -15,7 +15,7 @@ const Header = () => {
     setIsOpen((prev) => !prev);
   }
   return (
-    <header className="w-full h-20 bg-[#00000088] backdrop-blur-md flex items-center justify-between py-4 pr-3 bg-center bg-cover md:px-4 bg-[black] fixed top-0 left-0 right-0">
+    <header className="w-full h-20 bg-[#0000008f] backdrop-blur flex items-center justify-between py-4 pr-3 bg-center bg-cover md:px-4 bg-[black] fixed top-0 left-0 right-0">
       <div className="bar text-2xl md:hidden">
         <button
           onClick={handleNav}
@@ -116,7 +116,7 @@ const Header = () => {
               </button>
             </div>
             <div className="mobileSubmenu flex items-center">
-              <div className="auth px-1 py-1 bg-black backdrop-blur-2xl  z-[999] rounded-lg">
+              <div className="auth px-1 py-1 bg-black z-[999] rounded-lg">
                 <Link
                   to="auth/login"
                   onClick={handleNav}
@@ -136,7 +136,7 @@ const Header = () => {
                   Signup
                 </Link>
               </div>
-              <div className="auth px-1 py-1 bg-[#151515] rounded-full ml-2 text-2xl">
+              <div className="auth p-1 bg-[#151515] rounded-full ml-2 text-2xl">
                 <a
                   href="https://www.github.com/hiral-codes"
                   rel="noreferrer"
