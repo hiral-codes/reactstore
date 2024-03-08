@@ -2,13 +2,18 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+import img1 from "../assets/img1.webp";
+import img2 from "../assets/img2.webp";
+import img3 from "../assets/img3.webp";
+import img4 from "../assets/img4.webp";
+import img5 from "../assets/img5.webp";
+import img6 from "../assets/img6.webp";
 function HomeSlide() {
   const [slidesToShow, setSlidesToShow] = useState(3);
 
   useEffect(() => {
     const handleResize = () => {
-      // Adjust the number of slides to show based on window width
       if (window.innerWidth < 768) {
         setSlidesToShow(1); // Show one slide on smaller screens
       } else if (window.innerWidth < 1024) {
@@ -41,32 +46,56 @@ function HomeSlide() {
       <Slider {...settings}>
         <div>
           <div className="h-48 md:h-80">
-            <img src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
+            <img
+              src={img6}
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
           </div>
         </div>
         <div>
           <div className="h-48 md:h-80">
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
+            <img
+              src={img1}
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
           </div>
         </div>
         <div>
           <div className="h-48 md:h-80">
-            <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
+            <img
+              src={img2}
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
           </div>
         </div>
         <div>
           <div className="h-48 md:h-80">
-            <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
+            <img
+              src={img3}
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
           </div>
         </div>
         <div>
           <div className="h-48 md:h-80">
-            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
+            <img
+              src={img4}
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
           </div>
         </div>
         <div>
           <div className="h-48 md:h-80">
-            <img src="https://images.unsplash.com/photo-1524289286702-f07229da36f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="h-full w-full object-cover object-center" />
+            <img
+              src={img5}
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
           </div>
         </div>
       </Slider>

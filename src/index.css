@@ -2,19 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: 'Gilroy-Bold';
-    src: local('Gilroy-Bold'), url(./fonts/Gilroy-Bold.woff2) format('truetype');
-  }
-@font-face {
     font-family: 'Gilroy-Regular';
     src: local('Gilroy-Bold'), url(./fonts/Gilroy-Regular.woff2) format('truetype');
   }
-@font-face {
-    font-family: 'Gilroy-Semi';
-    src: local('Gilroy-Bold'), url(./fonts/Gilroy-SemiBold.woff2) format('truetype');
-  }
+
 body{
-    background-color: #151515;
+    background-color: black;
     color: white;
     font-family: 'Gilroy-Regular';
 }
