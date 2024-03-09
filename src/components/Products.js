@@ -1,29 +1,44 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import Card from "./Card";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 function Products() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((response) => {
+        setProducts(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
+  // Function to truncate title to a suitable length
+  const truncateTitle = (title, maxLength) => {
+    if (title.length <= maxLength) return title;
+    return title.substring(0, maxLength) + "...";
+  };
+
   return (
-    <div className='w-full'>
-      {/* Search Product */}
-      <div className="search flex items-center p-5 md:p-14">
-        <input type="search" className='bg-[#1a1a1a] px-2 md:p-4 md:w-80 py-1 outline-none ring-1 rounded-sm' placeholder='Search for products'/>
-      </div>
-      {/* Products & Categories */}
-      <div className="flex-col-reverse flex md:flex-row">
-        {/* All Products */}
-        <div className='Products flex-1'></div>
-        <div className="pl-5"><div className="categories p-5 ring-1 w-fit">
-          <h1>Categories :</h1>
-          <ul>
-            <li><Link to="/products/all">All</Link></li>
-            <li><Link to="/products/clothes">Clothes</Link></li>
-            <li><Link to="/products/jwallery">Electronics</Link></li>
-            <li><Link to="/products/men">Men</Link></li>
-            <li><Link to="/products/women">Women</Link></li>
-          </ul>
-        </div></div>
-      </div>
+    <div className="flex flex-wrap gap-4 py-4 px-4 justify-center md:px-10">
+      
+      {products.map((product) => (
+        <Link to={`/products/${product.id}`}>
+        <Card
+          key={product.id} // Adding a unique key for each card
+          image={product.image}
+          category={product.category}
+          title={truncateTitle(product.title, 20)} // Truncate title to 20 characters
+          price={product.price}
+        />
+        </Link>
+      ))}
     </div>
-  )
+  );
 }
 
-export default Products
+export default Products;

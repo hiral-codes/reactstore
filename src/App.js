@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from "./components/Footer";
+import Details from "./components/Details";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/products/:productId" element={<Details />} />
         </Routes>
         <Footer/>     
     </Router>
