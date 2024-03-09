@@ -15,7 +15,7 @@ const Header = () => {
     setIsOpen((prev) => !prev);
   }
   return (
-    <header className="w-full header z-[999] py-3 bg-[#00000075] backdrop-blur flex items-center justify-between pr-3 bg-center bg-cover md:px-10 bg-[black] fixed top-0 left-0 right-0">
+    <header className="w-full bg-[#1a1a1a7d] border-b border-[#808080b8] backdrop-blur-md header z-[999] py-3 flex items-center justify-between pr-3 bg-center bg-cover md:px-10 fixed top-0 left-0 right-0">
       <div className="bar text-2xl md:hidden">
         <button
           onClick={handleNav}
