@@ -17,7 +17,7 @@ function Home() {
   }, []);
   return (
     <>
-      <div>
+      <div className="md:pt-4">
         <HomeSlide />
       </div>
       <div className="home-title text-center text-xl md:text-4xl py-4 px-4 font-semibold">
