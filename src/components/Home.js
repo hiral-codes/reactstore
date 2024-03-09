@@ -148,7 +148,7 @@ function Home() {
       <div className="review flex justify-center items-center px-8 py-8">
         <div
           data-aos="zoom-in"
-          className="w-full h-auto shadow-2xl bg-[#1a1a1a] rounded relative md:w-1/2 px-4 pt-10 text-center"
+          className="w-full h-auto shadow bg-[#1a1a1a] rounded relative md:w-1/2 px-4 pt-10 text-center"
         >
           <div className="absolute w-24 h-24 rounded-full bg-gray-400 -top-8 left-8 overflow-hidden">
             <img
@@ -184,7 +184,7 @@ function Home() {
 
       {/* Contact Us */}
       <div className="container flex items-center justify-center py-10 px-10">
-        <div data-aos="zoom-in" className="bg-[#1a1a1a] shadow-xl h-auto w-full p-2 md:w-2/3 md:p-16 rounded relative">
+        <div data-aos="zoom-in" className="bg-[#1a1a1a] shadow h-auto w-full p-2 md:w-2/3 md:p-16 rounded relative">
           <h1 className="text-xl text-center md:text-left">Let's Connect !</h1>
           <p className="md:w-2/4 py-4 text-center md:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
