@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { GiCancel } from "react-icons/gi";
 
 import { Link } from "react-router-dom";
 function Details() {
@@ -27,10 +26,7 @@ function Details() {
         <p>Loading...</p>
       ) : (
         <div className="w-full md:w-[80%]     mx-auto flex items-center justify-center">
-          <div className="w-full md:w-1/2 mt-4 bg-[#1e1e1e] p-8 rounded-2xl relative">
-            <Link to="/products">
-              <div className="absolute top-1 right-1 text-3xl text-gray-600"><GiCancel/></div>
-            </Link>
+          <div className="w-full md:w-1/2 mt-4 p-8 rounded-2xl relative">
             <div className="image w-full h-60 md:h-80 bg-white rounded-xl">
               <img
                 src={product.image}
