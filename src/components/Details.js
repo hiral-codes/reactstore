@@ -26,7 +26,7 @@ function Details() {
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-        <div className="w-[80%] mx-auto flex items-center justify-center">
+        <div className="w-full md:w-[80%]     mx-auto flex items-center justify-center">
           <div className="w-full md:w-1/2 mt-4 bg-[#1e1e1e] p-8 rounded-2xl relative">
             <Link to="/products">
               <div className="absolute top-1 right-1 text-3xl text-gray-600"><GiCancel/></div>
