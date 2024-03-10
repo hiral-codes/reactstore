@@ -1,15 +1,18 @@
 import React from "react";
 import Card from "./Card";
 import axios from "axios";
+import SkeletonReact from "./SkeletonReact";
 import { useEffect, useState } from "react";
 function Products() {
   const [products, setProducts] = useState([]);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
       .get("https://fakestoreapi.com/products")
       .then((response) => {
         setProducts(response.data);
+        setLoading(false)
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -23,8 +26,31 @@ function Products() {
   };
 
   return (
-    <div className="flex flex-wrap gap-4 py-4 px-4 justify-center md:px-10 md:gap-8">
-      
+    isLoading?(
+      <div className="flex flex-wrap gap-4 py-4 px-4 justify-center md:px-10 md:gap-8">
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+        <SkeletonReact/>
+      </div>
+    ):(
+      <div className="flex flex-wrap gap-4 py-4 px-4 justify-center md:px-10 md:gap-8">
       {products.map((product) => (
         <Card
           key={product.id} // Adding a unique key for each card
@@ -36,6 +62,7 @@ function Products() {
         />
       ))}
     </div>
+    )
   );
 }
 

@@ -12,7 +12,7 @@ function Card({ image, category, price, title, route }) {
           /></Link>
         </div>
         <div className="category py-2">
-          <span className="cat p-1 opacity-60 rounded-2xl text-xs bg-black capitalize md:text-sm">
+          <span className="cat px-2 py-1 opacity-60 rounded-2xl text-xs bg-black capitalize md:text-sm">
             {category}
           </span>
         </div>
