@@ -43,7 +43,7 @@ function HomeSlide() {
   };
   return (
     <div className="slider-container w-[80%] mx-auto md:w-[95%] z-0">
-      <Slider {...settings} className="z-[-1]">
+      <Slider {...settings} className="z-1">
         <div>
           <div className="h-48 md:h-80">
             <img
