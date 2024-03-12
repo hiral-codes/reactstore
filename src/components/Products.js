@@ -5,25 +5,20 @@ import SkeletonReact from "./SkeletonReact";
 import { useEffect, useState } from "react";
 function Products() {
   const [products, setProducts] = useState([]);
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(null);
 
   useEffect(() => {
+    setLoading(true);
     axios
-      .get("https://fakestoreapi.com/products")
+      .get("https://dummyjson.com/products?limit=200&select=title,price,thumbnail,category,price")
       .then((response) => {
-        setProducts(response.data);
-        setLoading(false)
+        setProducts(response.data.products); // Accessing response.data.products
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
   }, []);
-
-  // Function to truncate title to a suitable length
-  const truncateTitle = (title, maxLength) => {
-    if (title.length <= maxLength) return title;
-    return title.substring(0, maxLength) + "...";
-  };
 
   return (
     isLoading?(
@@ -54,9 +49,9 @@ function Products() {
       {products.map((product) => (
         <Card
           key={product.id} // Adding a unique key for each card
-          image={product.image}
+          image={product.thumbnail}
           category={product.category}
-          title={truncateTitle(product.title, 20)} // Truncate title to 20 characters
+          title={product.title} // Truncate title to 20 characters
           price={product.price}
           route={`/products/${product.id}`}
         />

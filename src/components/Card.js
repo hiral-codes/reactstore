@@ -4,11 +4,11 @@ function Card({ image, category, price, title, route }) {
   return (
     <>
       <div className="container h-auto w-[150px] rounded bg-[#1a1a1a] p-3 md:w-[300px] md:p-5">
-        <div className="image h-20 bg-white rounded overflow-hidden p-1 md:h-48">
+        <div className="image h-20 bg-[white] rounded overflow-hidden p-1 md:h-48">
          <Link to={route}> <img
             src={image}
             alt="product"
-            className="w-full h-full object-contain object-center hover:scale-105 transition-transform ease-linear"
+            className="w-full h-full object-contain hover:scale-105 transition-transform ease-linear"
           /></Link>
         </div>
         <div className="category py-2">
@@ -16,7 +16,7 @@ function Card({ image, category, price, title, route }) {
             {category}
           </span>
         </div>
-        <h1 className="font-semibold ">{title}</h1>
+        <h1 className="text-xs sm:text-lg capitalize">{title}</h1>
         <p>${price}</p>
         <div className="buttons pt-2">
           <Link to={route}>

@@ -2,7 +2,9 @@ import React from 'react'
 
 function About() {
   return (
-    <div>About</div>
+    <div className='w-full flex'>
+      <div className='w-1/2'></div>
+    </div>
   )
 }
 
