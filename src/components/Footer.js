@@ -38,7 +38,7 @@ function Footer() {
         <ul className='text-sm'>
           <li className='font-bold text-lg text-[#5092FF]'>Subscribe</li>
           <li>Get latest news and articles</li>
-          <li><input type="email" className='mt-2 outline-none bg-transparent ring-1 px-2 rounded' placeholder='Email'/></li>
+          <li><input type="email" className='mt-2 outline-none bg-transparent ring-white ring-1 px-2 rounded' placeholder='Email'/></li>
         </ul>
         </div>
       </div>

@@ -23,7 +23,6 @@ function Details() {
         setLoading(true);
       });
   }, [productId]);
-  console.log(product);
   return (
     <>
       {isLoading ? (
