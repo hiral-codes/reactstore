@@ -10,7 +10,7 @@ function Products() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://api.escuelajs.co/api/v1/products?offset=0&limit=30")
+      .get("https://api.escuelajs.co/api/v1/products?offset=0&limit=20")
       .then((response) => {
         setProducts(response.data); // Accessing response.data.products
         setLoading(false);
