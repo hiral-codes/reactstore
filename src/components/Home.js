@@ -183,8 +183,8 @@ function Home() {
       </div>
 
       {/* Contact Us */}
-      <div className="container flex items-center justify-center py-10 px-10">
-        <div data-aos="zoom-in" className="bg-[#1a1a1a] shadow h-auto w-full p-2 md:w-2/3 md:p-16 rounded relative">
+      <div className="container flex items-center justify-center p-10">
+        <div data-aos="zoom-in" className="bg-[#1a1a1a] sm:mx-auto shadow h-auto w-full p-2 md:w-2/3 md:p-16 rounded relative">
           <h1 className="text-xl text-center md:text-left">Let's Connect !</h1>
           <p className="md:w-2/4 py-4 text-center md:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
@@ -194,7 +194,7 @@ function Home() {
             <input type="text" className="bg-[#1a1a1a] border px-4 py-2 outline-none rounded" placeholder="Email" />
             <button className="bg-[#5714FF] px-2 rounded py-1">Subscribe</button>
           </div>
-          <div className="hidden sm:block sm:absolute sm:top-10 sm:right-10">
+          <div className="hidden lg:block sm:absolute sm:top-10 sm:right-10">
             <Bubble/>
           </div>
         </div>

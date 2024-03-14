@@ -15,7 +15,7 @@ const Header = () => {
     setIsOpen((prev) => !prev);
   }
   return (
-    <header className="w-full bg-[#1a1a1a7d] border-b border-[#808080b8] backdrop-blur-md header z-[999] py-3 flex items-center justify-between pr-3 bg-center bg-cover md:px-10 md:py-5 fixed top-0 left-0 right-0">
+    <header className="w-full bg-[#1a1a1a7d] border-b-2 border-[#ffffff5f] backdrop-blur-md header z-[999] py-3 flex items-center justify-between pr-3 bg-center bg-cover md:px-10 md:py-5 fixed top-0 left-0 right-0">
       <div className="bar text-2xl md:hidden">
         <button
           onClick={handleNav}
@@ -51,7 +51,7 @@ const Header = () => {
               <Link to="/about">About</Link>
             </li>
             <li className="flex">
-            <div className="auth px-1 py-1">
+            {/* <div className="auth px-1 py-1">
                 <Link
                   to="auth/login"
                   onClick={handleNav}
@@ -70,7 +70,7 @@ const Header = () => {
                   <SiGnuprivacyguard />
                   Signup
                 </Link>
-              </div>
+              </div> */}
             </li>
           </ul>
         </div>
