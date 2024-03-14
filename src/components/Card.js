@@ -7,7 +7,7 @@ function Card({ image, category, price, title, route }) {
         <div className="image h-20 bg-[white] rounded overflow-hidden p-1 md:h-48">
          <Link to={route}> <img
             src={image}
-            alt="product"
+            alt="Not Available"
             className="w-full h-full object-contain hover:scale-105 transition-transform ease-linear"
           /></Link>
         </div>

@@ -10,16 +10,15 @@ function Products() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://dummyjson.com/products?limit=200&select=title,price,thumbnail,category,price")
+      .get("https://api.escuelajs.co/api/v1/products?offset=0&limit=30")
       .then((response) => {
-        setProducts(response.data.products); // Accessing response.data.products
+        setProducts(response.data); // Accessing response.data.products
         setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
   }, []);
-
   return (
     isLoading?(
       <div className="flex flex-wrap gap-4 py-4 px-4 justify-center md:px-10 md:gap-8">
@@ -49,8 +48,8 @@ function Products() {
       {products.map((product) => (
         <Card
           key={product.id} // Adding a unique key for each card
-          image={product.thumbnail}
-          category={product.category}
+          image={product.images[0]}
+          category={product.category.name}
           title={product.title} // Truncate title to 20 characters
           price={product.price}
           route={`/products/${product.id}`}
