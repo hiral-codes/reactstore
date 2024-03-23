@@ -21,16 +21,7 @@ function Products() {
   }, []);
   return (
     isLoading?(
-      <div className="flex flex-wrap gap-4 py-4 px-4 justify-center md:px-10 md:gap-8">
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
+      <div className="flex fixed inset-0 flex-wrap gap-4 py-4 px-4 justify-center md:px-10 md:gap-8">
         <SkeletonReact/>
         <SkeletonReact/>
         <SkeletonReact/>
