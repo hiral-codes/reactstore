@@ -33,15 +33,6 @@ function Products() {
         <SkeletonReact/>
         <SkeletonReact/>
         <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
-        <SkeletonReact/>
       </div>
     ):(
       <div className="flex flex-wrap gap-4 py-4 px-4 justify-center md:px-10 md:gap-8">
